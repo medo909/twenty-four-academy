@@ -31,6 +31,8 @@ align-items: center;
 background: black;
 backdrop-filter: blur(6px);
 z-index:1000;
+  flex-wrap:wrap;
+  gap:10px;
 }
 
 .logo{
@@ -128,4 +130,5 @@ letter-spacing: 0.5px;
   color: black;
   transition: 0.4s;
   transform: translateY(-2px);
+
 }
