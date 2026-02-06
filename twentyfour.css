@@ -1,0 +1,131 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero{
+min-height: 100vh;
+background: 
+linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.65)),
+url(champions.jpeg)
+;
+background-size:cover;
+background-position:center;
+background-repeat: no-repeat;
+position:relative;
+}
+
+.nav{
+position: fixed;
+top:0;
+left:0;
+width:100%;
+padding: 5px 15px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background: black;
+backdrop-filter: blur(6px);
+z-index:1000;
+}
+
+.logo{
+color:white;
+font-size: 40px;
+font-weight: 700;
+letter-spacing: 0.5px;
+align-items: center;
+display: flex;
+padding-left: 30px;
+object-fit: contain;
+}
+
+.image{
+width: 90px;
+height: 90px;
+object-fit: contain;
+}
+
+.nav-links{
+list-style: none;
+display:flex;
+gap:26px;
+margin-left:auto;
+border-color: white;
+border-radius: 12px;
+padding: 10px 16px;
+font-size: 40px;
+font-weight: 700;
+letter-spacing: 0.5px;
+}
+
+.nav-links a{
+  color:gold;
+  border: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  opacity:0.95;
+}
+.nav-links a.active{
+  border: 2px solid rgba(255,255,255,0.85)
+}
+.nav-links a:hover{
+  background: rgba(255,255,255,0.10);
+  transition: 0.5s;
+  opacity: 1;
+  border-radius: 8px;
+}
+
+.hero-content{
+  min-height: 100vh;
+  padding-top:120px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+  color:white;
+}
+
+.hero-content h1{
+  font-size: clamp (50px,6vw,96px);
+  font-weight: 300;
+  letter-spacing: 8px;
+  line-height: 1.1;
+  margin-bottom:20px;
+  text-transform: uppercase;
+}
+
+.hero-content p{
+  font-size:22px;
+  opacity: 0.85;
+  margin-bottom: 35px;
+  max-width:900px;
+  color: gold;
+}
+
+.btn{
+  display: inline-block;
+  background: gold;
+  color: black;
+  text-decoration: none;
+  border-radius:10px;
+  padding:14px 44px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.btn:hover{
+  background: white;
+  color: black;
+  transition: 0.4s;
+  transform: translateY(-2px);
+}
