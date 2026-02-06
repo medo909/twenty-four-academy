@@ -31,7 +31,7 @@ align-items: center;
 background: black;
 backdrop-filter: blur(6px);
 z-index:1000;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   gap:10px;
 }
 
@@ -131,4 +131,35 @@ letter-spacing: 0.5px;
   transition: 0.4s;
   transform: translateY(-2px);
 
+}
+
+@media (max-width: 768px) {
+  .nav{
+    padding: 10px 12px;
+    flex-wrap: wrap;          
+    gap: 10px;
+  }
+
+  .logo{
+    padding-left: 0;          
+  }
+
+  .image{
+    width: 60px;
+    height: 60px;
+  }
+
+  .nav-links{
+    margin-left: 0;           
+    width: 100%;             
+    justify-content: center;  
+    gap: 10px;
+    padding: 8px 10px;
+    flex-wrap: wrap;          
+  }
+
+  .nav-links a{
+    font-size: 16px;
+    padding: 8px 10px;
+  }
 }
